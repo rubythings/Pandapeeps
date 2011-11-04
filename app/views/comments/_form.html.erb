@@ -1,0 +1,12 @@
+<%= form_for [@article, @comment] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :score %><br />
+    <%= f.number_field :score %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

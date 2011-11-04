@@ -1,0 +1,25 @@
+<% title "Pandas" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Capture</th>
+    <th>Sex</th>
+    <th>Lat</th>
+    <th>Long</th>
+  </tr>
+  <% for panda in @pandas %>
+    <tr>
+      <td><%= panda.name %></td>
+      <td><%= panda.capture %></td>
+      <td><%= panda.sex %></td>
+      <td><%= panda.lat %></td>
+      <td><%= panda.long %></td>
+      <td><%= link_to "Show", panda %></td>
+      <td><%= link_to "Edit", edit_panda_path(panda) %></td>
+      <td><%= link_to "Destroy", panda, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Panda", new_panda_path %></p>

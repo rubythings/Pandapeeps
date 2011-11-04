@@ -1,0 +1,28 @@
+<% title "Panda" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @panda.name %>
+</p>
+<p>
+  <strong>Capture:</strong>
+  <%= @panda.capture %>
+</p>
+<p>
+  <strong>Sex:</strong>
+  <%= @panda.sex %>
+</p>
+<p>
+  <strong>Lat:</strong>
+  <%= @panda.lat %>
+</p>
+<p>
+  <strong>Long:</strong>
+  <%= @panda.long %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_panda_path(@panda) %> |
+  <%= link_to "Destroy", @panda, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pandas_path %>
+</p>

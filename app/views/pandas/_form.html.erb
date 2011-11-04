@@ -1,0 +1,24 @@
+<%= form_for @panda do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :capture %><br />
+    <%= f.date_select :capture %>
+  </p>
+  <p>
+    <%= f.label :sex %><br />
+    <%= f.text_field :sex %>
+  </p>
+  <p>
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </p>
+  <p>
+    <%= f.label :long %><br />
+    <%= f.text_field :long %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

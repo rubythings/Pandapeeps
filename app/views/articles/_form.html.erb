@@ -1,0 +1,17 @@
+<%= form_for @article, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :publication_date %><br />
+    <%= f.date_select :publication_date %>
+  </p>
+  <p><%= f.file_field :image %></p>
+  <p><%= f.submit %></p>
+<% end %>

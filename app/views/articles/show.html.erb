@@ -1,0 +1,20 @@
+<% title "Article" %>
+
+<p>
+  <strong>Body:</strong>
+  <%= @article.body %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+<p>
+  <strong>Publication Date:</strong>
+  <%= @article.publication_date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_article_path(@article) %> |
+  <%= link_to "Destroy", @article, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", articles_path %>
+</p>

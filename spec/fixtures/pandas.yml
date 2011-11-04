@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  capture: 2011-10-25
+  sex: MyString
+  lat: 1.5
+  long: 1.5
+
+two:
+  name: MyString
+  capture: 2011-10-25
+  sex: MyString
+  lat: 1.5
+  long: 1.5

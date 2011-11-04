@@ -1,0 +1,16 @@
+<% title "Comment" %>
+
+<p>
+  <strong>Body:</strong>
+  <%= @comment.body %>
+</p>
+<p>
+  <strong>Rep:</strong>
+  <%= @comment.score %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_article_comment_path(@article, @comment) %> |
+  <%= link_to "Destroy", article_comment_path(@article), :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", article_comments_path(@article) %>
+</p>
